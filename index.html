@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne"/>
     <title>Nouamane</title>
+    <!-- SweetAlert CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
+
+<!-- SweetAlert JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+
     <style>
       body {
         background-image: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80); /* The image used for background*/
@@ -96,9 +102,9 @@
 
         <!-- Links section 1. Replace the # inside of the "" with your links. -->
         <div class="links-container">
-          <a href="" class="w3-button w3-hover-pink w3-large w3-round-xlarge w3-yellow link" target="_blank">Skills</a>
+          <a onclick="fct()"  class="w3-button w3-hover-pink w3-large w3-round-xlarge w3-yellow link" target="_blank">Skills</a>
           <a href="./all/present.html" class="w3-button w3-hover-pink w3-large w3-round-xlarge w3-yellow link" target="_blank">Projects</a>
-          <a href="#" class="w3-button w3-hover-pink w3-large w3-round-xlarge w3-yellow link" target="_blank">About me</a>
+          <a onclick="fct()"  class="w3-button w3-hover-pink w3-large w3-round-xlarge w3-yellow link" target="_blank">About me</a>
           <a href="https://wa.me/0617618497" class="w3-button w3-hover-pink w3-large w3-round-xlarge w3-yellow link" target="_blank">Contact me</a>
         </div>
       </div>
@@ -136,5 +142,11 @@
       <!-- End footer -->
       </footer>
     </div>
+    <script>
+     
+      function fct(){
+        Swal.fire("This option is not yet ready");
+      }
+    </script>
   </body>
 </html>
